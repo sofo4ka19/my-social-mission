@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+	<link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Lora&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="quiz__main-container">
+        <div class="quiz-over-modal">
+            <div class="content">
+                <h1>Хороший результат !</h1>
+                <p class="f-size_18">Вы набрали 
+                    <span id="correct-answer"></span> из 
+                    <span id="number-of-all-questions-2"></span> баллов
+                </p>
+                <p class="f-size_18" id="text-result"></p>
+                <div class="but-cont">
+                    <button><a href="../index.html">Вернуться на главную</a></button>
+                    <button id="btn-try-again">Попробуй снова</button>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-container">
+            <div class="question-number">
+                <h3>Вопрос 
+                    <span id="number-of-question"></span>
+                    из
+                    <span id="number-of-all-questions"></span>
+                </h3>
+            </div>
+            <div id="question"></div>
+            <div class="options">
+                <div data-id="0" class="option option1"></div>
+                <div data-id="1" class="option option2"></div>
+                <div data-id="2" class="option option3"></div>
+            </div>
+            <div class="but-cont">
+                <div class="button">
+                    <button id="btn-next">Следующий вопрос</button>
+                </div>
+                <div class="button">
+                    <button id="go-back1"><a href="../index.html">Вернуться на главную</a></button>
+                </div>
+            </div>
+            <div id="answers-tracker">
+                
+            </div>
+        </div>
+    </div>
+    <!-- <script src="main.js"></script> -->
+</body>
+<script src="test2.js"></script>
+</html>
